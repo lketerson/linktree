@@ -133,6 +133,10 @@ footer{
     transform: translateY(-50%);
     left: 0;
     top: 50%;
+    animation: slide-out .3s;
+}
+#switch button:hover{
+    outline:  8px solid var(--button-surface-color);
 }
 
 #switch span{
@@ -147,8 +151,7 @@ footer{
 }
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide-in .3s forwards;
 }
 
 @media (min-width:700px) {
@@ -165,3 +168,22 @@ footer{
  
 }
 
+@keyframes slide-in {
+    from{
+    left:0;
+    }
+
+    to{
+    left:50%
+    }
+}
+
+@keyframes slide-out {
+    from{
+    left:50%;
+    }
+
+    to{
+    left:0%
+    }
+}
