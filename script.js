@@ -3,9 +3,9 @@ function toggleMode(){
    const img = document.querySelector("#profile img")
    html.classList.toggle('light')
    if(html.classList.contains('light')){
-    img.setAttribute('src','assets/assets/light-profile.png')
+    img.setAttribute('src','assets/assets/Ellipse 3.png')
    }else{
-    img.setAttribute('src','assets/assets/dark-profile.png')
+    img.setAttribute('src','assets/assets/Ellipse 3.png')
    }
 }
 
